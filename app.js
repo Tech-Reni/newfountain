@@ -21,7 +21,7 @@ ScrollReveal({
 ScrollReveal().reveal('.heading', { origin: 'top' });
 ScrollReveal().reveal('.dy-says , .said-by', { origin: 'bottom' });
 
-let quote1 = 'We are a WORD based church that believes in the HolySpirit';
+let quote1 = 'We are a WORD based church that believes in the Holy Spirit';
 
 let quote2 = 'Sin is the Enterprise of the devil';
 
