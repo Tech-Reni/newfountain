@@ -23,7 +23,7 @@ ScrollReveal().reveal('.dy-says , .said-by , .service-invite ', { origin: 'botto
 ScrollReveal().reveal('.sundays , .fridays , .first-day-of-month', { origin: 'left' });
 ScrollReveal().reveal('.wednesdays , .mondays', { origin: 'right' });
 
-let quote1 = 'We are a WORD based church that believes in the Holy Spirit';
+let quote1 = 'We are a WORD based church ';
 
 let quote2 = 'Sin is the Enterprise of the devil';
 
