@@ -12,14 +12,16 @@ close_btn.addEventListener('click', () => {
 
 
 ScrollReveal({
-    reset: true,
+    // reset: true,
     distance: '100px',
     duration: 1800,
     delay: 100
 });
 
 ScrollReveal().reveal('.heading', { origin: 'top' });
-ScrollReveal().reveal('.dy-says , .said-by', { origin: 'bottom' });
+ScrollReveal().reveal('.dy-says , .said-by , .service-invite ', { origin: 'bottom' });
+ScrollReveal().reveal('.sundays , .fridays , .first-day-of-month', { origin: 'left' });
+ScrollReveal().reveal('.wednesdays , .mondays', { origin: 'right' });
 
 let quote1 = 'We are a WORD based church that believes in the Holy Spirit';
 
@@ -33,5 +35,4 @@ const typed = new Typed('.words', {
     backSpeed: 30,
     backDelay: 5000,
     loop: true,
-    cursor: 'none'
 });
