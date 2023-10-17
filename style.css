@@ -200,7 +200,7 @@
     
     .sec-sect {
         width: 100%;
-        height: 100px;
+        height: 150px;
     }
     
     .sec-sect .dy-says {
@@ -345,5 +345,8 @@
             margin-top: 10px;
             text-align: center;
             font-size: x-large;
+        }
+        .copyright {
+            font-size:13px;
         }
     }
