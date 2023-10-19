@@ -227,7 +227,7 @@
             .sec-sect .dy-says {
                 margin-top: 20px;
                 text-align: center;
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 18px;
                 word-spacing: 2px;
             }
@@ -276,7 +276,7 @@
             }
             
             .service-invite a {
-                color: rgb(0, 2, 35);
+                color: rgb(0, 15, 255);
             }
             
             .ministry-expression {
@@ -285,6 +285,8 @@
                 font-size: 22px;
                 letter-spacing: 0.2px;
                 color: rgb(60, 60, 60);
+                margin-top: 20px;
+                margin-bottom: -40px;
             }
             
             .ministry-arms {
@@ -299,7 +301,7 @@
             .ministry-arms .arm {
                 width: 250px;
                 height: 300px;
-                margin-top: 70px;
+                margin-top: 40px;
                 border-radius: 12px;
                 text-align: center;
                 border: 1px solid white;
@@ -374,11 +376,27 @@
             
             .footer .footer-mail {
                 width: 100%;
-                height: 60px;
+                height: 100px;
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+                flex-direction: column;
                 text-align: center;
+            }
+            
+            .footer .footer-mail .mail {
+                width: 100%;
+                margin-left: -80px;
+            }
+            
+            .footer .footer-mail .socials {
+                width: 100%;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+            }
+            
+            .footer .footer-mail .socials h3 {
+                height: 100px;
             }
             
             .footer .footer-mail img {
@@ -401,7 +419,7 @@
                 text-align: center;
                 padding: 10px;
                 color: white;
-                background-color: rgb(30, 42, 66);
+                background-color: rgb(200, 25, 25);
             }
             /* STYLING FOR MOBILE  */
             
@@ -443,7 +461,7 @@
                 .sec-sect .dy-says {
                     margin-top: 20px;
                     text-align: center;
-                    font-weight: 200;
+                    font-weight: 400;
                     font-size: 18px;
                 }
                 .first-sect .motto {
@@ -490,8 +508,9 @@
                     margin-bottom: 50px;
                 }
                 .copy-right {
-                    height: 40px;
+                    height: 60px;
                     padding: 5px;
+                    padding-top: 10px;
                     font-size: 12px;
                     overflow: hidden;
                 }
