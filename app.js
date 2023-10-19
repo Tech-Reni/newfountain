@@ -1,4 +1,4 @@
-let hamburger = document.querySelector('.hamburger')
+let hamburger = document.querySelector('.hamburger');
 let mbl_nav_cont = document.querySelector('.mobile-nav-container');
 let close_btn = document.querySelector('.close');
 
@@ -10,16 +10,15 @@ close_btn.addEventListener('click', () => {
     mbl_nav_cont.classList.toggle('active');
 })
 
-
 ScrollReveal({
     // reset: true,
-    distance: '100px',
+    distance: '70px',
     duration: 1800,
     delay: 100
 });
 
 ScrollReveal().reveal('.heading', { origin: 'top' });
-ScrollReveal().reveal('.said-by , .service-invite ', { origin: 'bottom' });
+ScrollReveal().reveal('.said-by , .service-invite, .arm ', { origin: 'bottom' });
 ScrollReveal().reveal('.sundays , .fridays , .first-day-of-month', { origin: 'left' });
 ScrollReveal().reveal('.wednesdays , .mondays', { origin: 'right' });
 
