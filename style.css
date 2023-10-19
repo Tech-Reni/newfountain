@@ -296,6 +296,7 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 padding: 30px;
+                overflow:hidden;
             }
             
             .ministry-arms .arm {
@@ -305,6 +306,7 @@
                 border-radius: 12px;
                 text-align: center;
                 border: 1px solid white;
+                overflow:hidden;
                 box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.4), 0 16px 22px -20px rgba(0, 0, 0, 0.5);
             }
             
