@@ -285,8 +285,8 @@
                 font-size: 22px;
                 letter-spacing: 0.2px;
                 color: rgb(60, 60, 60);
-                margin-top: 20px;
-                margin-bottom: -20px;
+                margin-top: 30px;
+                margin-bottom: -10px;
             }
             
             .ministry-arms {
@@ -296,7 +296,6 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 padding: 30px;
-                overflow:hidden;
             }
             
             .ministry-arms .arm {
@@ -306,7 +305,6 @@
                 border-radius: 12px;
                 text-align: center;
                 border: 1px solid white;
-                overflow:hidden;
                 box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.4), 0 16px 22px -20px rgba(0, 0, 0, 0.5);
             }
             
@@ -371,6 +369,7 @@
                 color: white;
                 padding: 10px;
                 overflow: hidden;
+                margin-left: 5%;
             }
             
             .footer div h3 {
@@ -498,6 +497,9 @@
                     height: 250px;
                     margin-top: 50px;
                     margin-bottom: 50px;
+                }
+                .footer div:nth-child(5) {
+                    height: 40px;
                 }
                 .copy-right {
                     height: 60px;
