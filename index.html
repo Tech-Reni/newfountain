@@ -1,111 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/c9733f2a12.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
     <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/image/logo.jpg">
-    <link rel="preload" as="image" href="./assets/image/facebook-logo.png">
-    <link rel="preload" as="image" href="./assets/image/mixlr-logo.png">
-
-    <!-- 
+  <link rel="preload" as="image" href="./img/cross.jpg">
+   <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./assets/image/logo.jpg" type="image/png">
+  <link rel="shortcut icon" href="./img/logo.jpg" type="image/png">
 
-    <title>New Fountain of the word ministries</title>
-    <link rel="stylesheet" href="style.css">
-
+  <title>The New Fountain of the word Mininstries</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- NAV CONTAINER FOR MOBILE  -->
-    <div class="mobile-nav-container">
-        <ul class="mobile-nav">
-            <button class="close">X</button>
-            <a href="#">
-                <li>Home</li>
-            </a>
-            <a href="#">
-                <li>About</li>
-            </a>
-            <a href="#">
-                <li>Ministrations</li>
-            </a>
-            <a href="#">
-                <li>Mission</li>
-            </a>
-            <a href="Give_Page/give.html">
-                <li style="font-size:20px;">Give</li>
-            </a>
-        </ul>
+  
+  <!-- THE FIRST PART OF THE WEB THAT USERS SEE  -->
+  <div class="top">
+
+    <!-- THIS IS THE NAVBAR -->
+    <div class="navbar" id="navbar">
+
+      <div class="img_cont">
+        <img src="./img/logo.jpg" alt="logo">
+        <div class="logo_name">
+          THE NEW FOUNTAIN OF <br> THE WORD MINISTRIES
+        </div>
+      </div>
+
+      <!-- THIS IS FOR THE DESKTOP VIEW ONLY  -->
+      <div class="links_cont">
+        <button><a href="./index.html">Home</a></button>
+        <button><a href="#">About</a></button>
+  
+        <button><a href="#">Live</a></button>
+        <button><a href="#">Mission</a></button>
+      </div>
+
+      <!-- THIS IS THE GIVE BUTTON  -->
+      <button class="give_btn">
+        Online give
+      </button>
+
+      <div class="menu_cont" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+     
     </div>
 
-    <!-- THE HEADER  -->
+    <!-- THIS IS THE MOBILE NAVBAR -->
+    <div class="slide_nav_cont" id="slide_nav_cont">
+      <button id="menu_close_btn"><p>X</p></button><br>
+      <button><a href="./index.html">Home</a></button>
+      <br>
+      <button><a href="#">About</a></button>
+      <br>
+      <button><a href="#">Live</a></button>
+      <br>
+      <button><a href="#">Mission</a></button>
+      <br>
+      <button><a href="#">Online Give</a></button>
+    </div>
 
-    <header>
-        <!-- THE CHURCH LOGO  -->
-        <div class="logo">
-            <img src="assets/image/logo.jpg" alt="logo">
-        </div>
-        <!-- THE NAV CONTAINER FOR DESKTOP -->
-        <div class="desktop-nav-container">
-            <ul class="desktop-nav">
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Ministrations</li>
-                </a>
-                <a href="#">
-                    <li>Mission</li>
-                </a>
-            </ul>
-        </div>
-        <div class="give-container">
-            <a href="Give_Page/give.html"><button class="give-btn">Give</button></a>
-        </div>
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </header>
+    <!-- THE LANDING TEXT  -->
+      <p id="landing_text">"I can do all things through Christ who strengthens me."</p>
+      <br>
+      <p id="landing_text_ref">- Philippians 4:13</p>
+    <button id="change-quote-btn">Change Quote</button>
 
-    <!-- FIRST SECTION  -->
+  </div>
 
-    <section class="first-sect">
-        <div class="heading">
-            The New Fountain of the Word Ministries
-        </div>
-        <div class="motto">
-            <div></div>
-            <div>Delivering</div>
-            <div>Building</div>
-            <div>and Fufilling Destinies</div>
-        </div>
-    </section>
+  <br>
 
-    <section class="sec-sect">
-        <div class="dy-says">
-            <span class="words">
-                
-            </span>
-        </div>
-        <div class="said-by">
-            <b> - THE SET MAN</b>
-        </div>
-    </section>
+  <h2 class="sect_heading">The Ministry Arms</h2>
 
+  <div class="ministry-arms">
+     <!-- WORD FEAST  -->
+     <div class="arm">
+      <div class="arm-image">
+          <img src="./img/WordFeast_logo.jpg" alt="">
+      </div>
+      <h4>Word Feast International</h4>
+      <hr>
+      <p>An Interdenominational Ministers & Leadership <br> Conference
+      </p>
+  </div>
+
+  <!-- JESUS TO YOU  -->
+  <div class="arm">
+      <div class="arm-image">
+          <img src="./img/logo.jpg" alt="">
+      </div>
+      <h4>Jesus-to-you(J2U)</h4>
+      <hr>
+      <p>The ministry's mission field expression to rural areas through the word, education and welfare</p>
+  </div>
+
+  <!-- MEN OF PURPOSE -->
+  <div class="arm">
+      <div class="arm-image">
+          <img src="./img/Menofpurp_logo.jpg" alt="">
+      </div>
+      <h4>Men Of Purpose Fellowship International</h4>
+      <hr>
+      <p>An Interdenominational fellowship of brethen in faith especially men</p>
+  </div>
+
+  <!-- CAMPUS STUDENT NETWORK -->
+  <div class="arm">
+      <div class="arm-image">
+          <img src="./img/logo.jpg" alt="">
+      </div>
+      <h4>Campus Student Network(CSN)</h4>
+      <hr>
+      <p>Ministry outreach to undergraduates across campuses in Nigeria</p>
+  </div>
+    
+  </div>
+
+  
     <!-- THE CHURCH SERVICES AND ACTIVITIES  -->
 
     <section class="activities">
@@ -131,120 +149,26 @@
         </p>
     </section>
     <br>
-
-    <!-- THE MINISTRY ARM AND EXPRESSION  -->
-    <div style="height:70px; padding:10px; overflow:hidden; text-align:center; width:100%;">
-        <h3 class="ministry-expression"> Ministry Expressions</h3>
+  
+  <div class="useless"></div>
+ 
+  
+  <!-- THIS IS THE FOOTER  -->
+  <div class="my_footer">
+    <div class="my_footer_copyright">
+      ©2024 TNFWM  All Rights Reserved.
     </div>
-
-    <section class="ministry-arms">
-        <!-- WORD FEAST  -->
-        <div class="arm">
-            <div class="arm-image">
-                <img src="assets/image/WordFeast_logo.jpg" alt="">
-            </div>
-            <h4>Word Feast International</h4>
-            <hr>
-            <p>An Interdenominational Ministers & Leadership <br> Conference
-            </p>
-        </div>
-
-        <!-- JESUS TO YOU  -->
-        <div class="arm">
-            <div class="arm-image">
-                <img src="assets/image/logo.jpg" alt="">
-            </div>
-            <h4>Jesus-to-you(J2U)</h4>
-            <hr>
-            <p>The ministry's mission field expression to rural areas through the word, education and welfare</p>
-        </div>
-
-        <!-- MEN OF PURPOSE -->
-        <div class="arm">
-            <div class="arm-image">
-                <img src="assets/image/Menofpurp_logo.jpg" alt="">
-            </div>
-            <h4>Men Of Purpose Fellowship International</h4>
-            <hr>
-            <p>An Interdenominational fellowship of brethen in faith especially men</p>
-        </div>
-
-        <!-- CAMPUS STUDENT NETWORK -->
-        <div class="arm">
-            <div class="arm-image">
-                <img src="assets/image/logo.jpg" alt="">
-            </div>
-            <h4>Campus Student Network(CSN)</h4>
-            <hr>
-            <p>Ministry outreach to undergraduates across campuses in Nigeria</p>
-        </div>
-
-    </section>
-
-    <!-- GOOGLE MAP OF THE CHURCH  -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.324515582896!2d3.29617167447152!3d6.606536693387414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91ab339b2c65%3A0x8e75d397ab8d0c23!2s12%20Ibukun%20Omosehin%20Ave%2C%20Street%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1697504949458!5m2!1sen!2sng"
-        width="100%" height="400" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-location"></iframe>
-
-
-    <!-- FOOTER  -->
-
-    <footer class="footer">
-        <div class="lagos-branch">
-            <h3 class="branch-name">
-                LAGOS (HEADQUATERS)
-            </h3>
-            <p>12, Ibukun Omosheyin Avenue,</p>
-            <p>Off Azeez Ayorinde Street,</p>
-            <p>Alimosho, Iyana Ipaja, Lagos.</p>
-        </div>
-        <div class="lafenwa-branch">
-            <h3 class="branch-name">
-                IJAGBA LAFENWA
-            </h3>
-            <p>63, Iyaniwura Dada Street,</p>
-            <p>Ijagba, Lafenwa (after Ayobo)</p>
-            <p>Ogun State.</p>
-        </div>
-        <div class="robiyan-branch">
-            <h3 class="branch-name">
-                IJOKO ROBIYAN
-            </h3>
-            <p>27, Oyesiji Street, Off Ekiti</p>
-            <p>Bus-Stop, Robiyan, Ijoko,</p>
-            <p>Ota, Ogun State.</p>
-        </div>
-        <div class="abebi-branch">
-            <h3 class="branch-name">
-                OTA ABEBI
-            </h3>
-            <p>4, Faith Street, Opposite the Living</p>
-            <p>Camp, Off Owo-Ola Street,</p>
-            <p>Abebi New Site, Tollgate, Ota</p>
-            <p>Ogun State.</p>
-        </div>
-        <div></div>
-
-        <br>
-
-        <a href="mailto:info@newfountainglobal.com" style="color: white;">
-            info@newfountainglobal.com
-        </a>
-        <br>
-        <div class="footer-mail">
-            <h3>Socials : </h3>
-            <img src="assets/image/facebook-logo.png" alt="">
-            <img src="assets/image/mixlr-logo.png" alt="">
-        </div>
-    </footer>
-    <div class="copy-right">
-        Copyright &copy; 2023 - The New Fountain of the Word Ministries. All Rights Reserved.
+    <div class="my_footer_mail">
+      newfountainglobal@gmail.com
     </div>
+    <div class="my_footer_icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.youtube.com/@newfountainglobal"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
 
+<script src="script.js"></script>
 
-
-    <!-- custom js link  -->
-
-    <script src="app.js"></script>
 </body>
-
 </html>
