@@ -1,15 +1,3 @@
-let hamburger = document.querySelector('.hamburger');
-let mbl_nav_cont = document.querySelector('.mobile-nav-container');
-let close_btn = document.querySelector('.close');
-
-hamburger.addEventListener('click', () => {
-    mbl_nav_cont.classList.toggle('active');
-});
-
-close_btn.addEventListener('click', () => {
-    mbl_nav_cont.classList.toggle('active');
-})
-
 ScrollReveal({
     // reset: true,
     distance: '70px',
@@ -17,21 +5,65 @@ ScrollReveal({
     delay: 100
 });
 
-ScrollReveal().reveal('.heading', { origin: 'top' });
-ScrollReveal().reveal('.said-by , .service-invite, .arm ', { origin: 'bottom' });
-ScrollReveal().reveal('.sundays , .fridays , .first-day-of-month', { origin: 'left' });
-ScrollReveal().reveal('.wednesdays , .mondays', { origin: 'right' });
+ScrollReveal().reveal('#landing_text', { origin: 'bottom' });
+ScrollReveal().reveal('#landing_text_ref', { origin: 'left' });
+ScrollReveal().reveal('.arm', { origin: 'left' });
 
-let quote1 = 'We are a WORD based church';
+const quotes = [
+    {
+        quote: "I can do all things through Christ who strengthens me.",
+        verse: "- Philippians 4:13"
+    },
+    {
+        quote: "For I know the plans I have for you, declares the Lord.",
+        verse: "- Jeremiah 29:11"
+    },
+    {
+        quote: "The Lord is my shepherd; I shall not want.",
+        verse: "- Psalm 23:1"
+    },
+    {
+        quote: "I am the way, the truth, and the life.",
+        verse: "- John 14:6"
+    },
+    {
+        quote: "For we walk by faith, not by sight.",
+        verse: "- 2 Corinthians 5:7"
+    },
+    {
+        quote: "Pray without ceasing.",
+        verse: "- 1 Thessalonians 5:17"
+    },
+    {
+        quote: "Cast all your anxiety on him because he cares for you.",
+        verse: "- 1 Peter 5:7"
+    },
+];
 
-let quote2 = 'Sin is the Enterprise of the devil';
+const quoteElement = document.getElementById('landing_text');
+const verseElement = document.getElementById('landing_text_ref');
+const button = document.getElementById('change-quote-btn');
 
-let quote3 = 'Christianity is the normal way of life';
-
-const typed = new Typed('.words', {
-    strings: [quote1, quote2, quote3],
-    typeSpeed: 50,
-    backSpeed: 30,
-    backDelay: 5000,
-    loop: true,
+button.addEventListener('click', () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomQuote = quotes[randomIndex];
+    quoteElement.textContent = `"${randomQuote.quote}"`;
+    verseElement.textContent = randomQuote.verse;
 });
+
+const hamburger = document.getElementById("hamburger");
+const slide_nav_cont = document.getElementById("slide_nav_cont"); 
+const close_btn = document.getElementById("menu_close_btn");
+
+hamburger.addEventListener("click",  () => {
+    slide_nav_cont.classList.toggle("active");
+});
+
+close_btn.addEventListener("click",  () => {
+    slide_nav_cont.classList.toggle("active");
+});
+
+window.addEventListener("scroll" , () => {
+    let navbar = document.getElementById("navbar");
+    navbar.classList.toggle("blury" , window.scrollY > 100);
+})
