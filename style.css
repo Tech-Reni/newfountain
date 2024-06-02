@@ -1,514 +1,392 @@
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-            * {
-                margin: 0;
-                padding: 0;
-                outline: 0;
-                box-sizing: border-box;
-                overflow-x: hidden;
-                text-decoration: none;
-                font-family: 'Poppins', sans-serif;
-                scroll-behavior: smooth;
-            }
-            
-             ::-webkit-scrollbar {
-                width: 7px;
-                scroll-behavior: smooth;
-            }
-            
-             ::-webkit-scrollbar-track {
-                background-color: hsl(0, 0%, 98%);
-            }
-            
-             ::-webkit-scrollbar-thumb {
-                background: rgb(120, 120, 120);
-                border-radius: 10px;
-            }
-            
-            header {
-                width: 100%;
-                padding: 20px;
-                display: flex;
-                position: fixed;
-                background: white;
-                justify-content: space-around;
-                z-index: 2;
-                box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
-            }
-            
-            .logo {
-                width: 110px;
-                height: 110px;
-            }
-            
-            .logo img {
-                width: 90%;
-                margin-top: 7px;
-                margin-left: calc(50% - 45%);
-            }
-            
-            .desktop-nav-container {
-                width: 600px;
-                margin-left: 30px;
-            }
-            
-            .desktop-nav-container .desktop-nav {
-                display: flex;
-                justify-content: space-around;
-                list-style: none;
-            }
-            
-            .desktop-nav-container .desktop-nav a li {
-                margin-top: 35px;
-                color: black;
-                cursor: pointer;
-            }
-            
-            .desktop-nav-container .desktop-nav a li:hover {
-                color: rgb(120, 120, 120);
-            }
-            
-            .give-container {
-                width: 180px;
-                text-align: center;
-                padding-top: 23px;
-            }
-            
-            .give-container .give-btn {
-                cursor: pointer;
-                width: 125px;
-                height: 45px;
-                letter-spacing: 1.3px;
-                font-size: 16px;
-                font-weight: 500;
-                border-radius: 20px;
-                color: rgb(0, 2, 35);
-                border: 2px solid rgb(0, 2, 35);
-                background: white;
-            }
-            
-            .give-container .give-btn:hover {
-                background: rgb(235, 235, 235);
-                color: rgb(0, 2, 35);
-                border: 2px solid rgb(0, 2, 35);
-                transition: all 200ms ease;
-            }
-            
-            .hamburger {
-                cursor: pointer;
-                width: 40px;
-                height: 40px;
-                display: none;
-                margin-top: 20px;
-            }
-            
-            .hamburger .bar {
-                width: 100%;
-                height: 5px;
-                border-radius: 3px;
-                margin-top: 5px;
-                display: block;
-                background: rgb(235, 0, 0);
-            }
-            
-            .hamburger .bar:nth-child(2) {
-                width: 20px;
-            }
-            
-            .mobile-nav-container {
-                width: 100%;
-                height: 90vh;
-                margin-top: -200%;
-                position: fixed;
-                background: rgb(20, 20, 20);
-                color: white;
-                box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
-                transition: all 400ms;
-                z-index: 100;
-            }
-            
-            .mobile-nav-container.active {
-                margin-top: 0px;
-                transition: all 400ms;
-            }
-            
-            .mobile-nav {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                justify-content: center;
-                gap: 35px;
-            }
-            
-            .mobile-nav a li {
-                color: white;
-                letter-spacing: 1px;
-            }
-            
-            .mobile-nav .close {
-                width: 50px;
-                height: 70px;
-                margin-top: 10px;
-                margin-left: calc(100% - 55px);
-                background: rgb(20, 20, 20);
-                color: white;
-                font-size: 25px;
-                font-weight: 500;
-                border: none;
-            }
-            
-            .first-sect {
-                width: 100%;
-                height: 500px;
-                padding: 2px;
-                background-color: rgba(0, 0, 0, 0.7);
-                background-image: url('assets/image/logo.jpg');
-                background-size: 110%;
-                margin-top: 150px;
-                background-position-y: -280px;
-                background-repeat: no-repeat;
-                background-position-x: center;
-                background-blend-mode: darken;
-                color: white;
-            }
-            
-            .first-sect .heading {
-                margin-top: 160px;
-                text-align: center;
-                font-size: 40px;
-            }
-            
-            .first-sect .motto {
-                height: 50px;
-                text-align: center;
-                color: rgb(227, 227, 227);
-                overflow: hidden;
-                font-weight: 200;
-                letter-spacing: 2px;
-            }
-            
-            .first-sect .motto div {
-                height: 100%;
-                width: 100%;
-                display: block;
-                font-size: 18px;
-                animation: scrollup 12s infinite;
-            }
-            
-            @keyframes scrollup {
-                30% {
-                    transform: translateY(-100%);
-                }
-                35% {
-                    transform: translateY(-90%);
-                }
-                60% {
-                    transform: translateY(-200%);
-                }
-                65% {
-                    transform: translateY(-190%);
-                }
-                95% {
-                    transform: translateY(-300%);
-                }
-                100% {
-                    transform: translateY(-290%);
-                }
-            }
-            
-            .sec-sect {
-                width: 100%;
-                height: 200px;
-                padding-top: 50px;
-                padding-left: 10px;
-                padding-right: 10px;
-                text-align: center;
-            }
-            
-            .sec-sect .dy-says {
-                margin-top: 20px;
-                text-align: center;
-                font-weight: 500;
-                font-size: 18px;
-                word-spacing: 2px;
-            }
-            
-            .sec-sect .said-by {
-                margin-top: 5px;
-                letter-spacing: 1.2px;
-                text-align: center;
-                color: rgb(235, 0, 0);
-            }
-            
-            .activities {
-                width: 60%;
-                height: 470px;
-                margin-top: 40px;
-                margin-bottom: 40px;
-                margin-left: calc(50% - 30%);
-                box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.4), 0 16px 12px -20px rgba(0, 0, 0, 0.5);
-                border-radius: 20px;
-                padding: 20px;
-                overflow: hidden;
-            }
-            
-            .activities h2 {
-                color: rgb(30, 30, 30);
-                font-weight: 300;
-                letter-spacing: 2.5px;
-                text-align: center;
-            }
-            
-            .activities div {
-                width: 100%;
-                height: 50px;
-                padding: 10px;
-                margin-top: 12px;
-                text-align: center;
-                overflow: hidden;
-            }
-            
-            .service-invite {
-                margin-top: 10px;
-                text-align: center;
-                letter-spacing: 0.5px;
-                margin-bottom: 35px;
-                padding: 4px;
-            }
-            
-            .service-invite a {
-                color: rgb(0, 15, 255);
-            }
-            
-            .ministry-expression {
-                text-align: center;
-                font-weight: 500;
-                font-size: 22px;
-                letter-spacing: 0.2px;
-                color: rgb(60, 60, 60);
-                margin-top: 30px;
-                margin-bottom: -10px;
-                overflow:hidden;
-            }
-            
-            .ministry-arms {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                padding: 30px;
-                overflow:hidden;
-            }
-            
-            .ministry-arms .arm {
-                width: 250px;
-                height: 300px;
-                margin-top: 40px;
-                border-radius: 12px;
-                text-align: center;
-                border: 1px solid white;
-                overflow:hidden;
-                box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.4), 0 16px 22px -20px rgba(0, 0, 0, 0.5);
-            }
-            
-            .ministry-arms .arm::before {
-                content: "";
-                display: block;
-                height: 25%;
-                width: 100%;
-                overflow: hidden;
-                background: rgba(255, 85, 85, 0.8);
-                border-radius: 12px 12px 0 0;
-            }
-            
-            .ministry-arms .arm hr {
-                width: 80%;
-                margin-top: 5px;
-                margin-left: calc(50% - 40%);
-            }
-            
-            .ministry-arms .arm p {
-                padding: 10px;
-            }
-            
-            .ministry-arms .arm .arm-image {
-                width: 120px;
-                height: 120px;
-                border-radius: 100%;
-                margin-top: -55px;
-                margin-left: calc(50% - 60px);
-                display: flex;
-                justify-content: center;
-            }
-            
-            .ministry-arms .arm .arm-image img {
-                width: 90%;
-                height: 90%;
-                border-radius: 100%;
-                object-fit: cover;
-            }
-            
-            .footer {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                padding: 20px;
-                background-color: rgb(10, 10, 10);
-                overflow: hidden;
-            }
-            
-            .footer a {
-                width: 100%;
-                margin-bottom: 20px;
-                display: block;
-                text-align: center;
-            }
-            
-            .footer div {
-                width: 250px;
-                height: 165px;
-                color: white;
-                padding: 10px;
-                overflow: hidden;
-                margin-left: 5%;
-            }
-            
-            .footer div h3 {
-                font-weight: 500;
-            }
-            
-            .footer div p {
-                font-weight: 200;
-                line-height: 25px;
-                font-size: 14px;
-            }
-            
-            .footer .footer-mail {
-                width: 100%;
-                height: 50px;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
-            
-            .footer .footer-mail img {
-                width: 30px;
-                height: 30px;
-                margin-left: 15px;
-                margin-right: 15px;
-            }
-            
-            .footer .footer-mail a {
-                color: white;
-                font-size: 16px;
-                font-weight: 300;
-                margin-left: 150px;
-            }
-            
-            .copy-right {
-                width: 100%;
-                height: 45px;
-                text-align: center;
-                padding: 10px;
-                color: white;
-                background-color: rgb(200, 25, 25);
-            }
-            /* STYLING FOR MOBILE  */
-            
-            @media (max-width: 800px) {
-                header {
-                    justify-content: space-between;
-                    height: 125px;
-                }
-                .logo {
-                    width: 95px;
-                    height: 95px;
-                    margin-top: -10px;
-                }
-                .logo img {
-                    width: 90%;
-                    margin-left: calc(50% - 45%);
-                }
-                .desktop-nav-container {
-                    display: none;
-                }
-                .hamburger {
-                    display: block;
-                }
-                .give-container {
-                    display: none;
-                }
-                .first-sect {
-                    height: 320px;
-                    margin-top: 120px;
-                    background-size: 250%;
-                    background-position-y: -120px;
-                    overflow: hidden;
-                }
-                .first-sect .heading {
-                    margin-top: 80px;
-                    text-align: center;
-                    font-size: 26px;
-                }
-                .sec-sect .dy-says {
-                    margin-top: 20px;
-                    text-align: center;
-                    font-weight: 400;
-                    font-size: 18px;
-                }
-                .first-sect .motto {
-                    font-size: 16px;
-                }
-                .activities {
-                    width: 90%;
-                    height: 450px;
-                    margin-top: 40px;
-                    margin-bottom: 40px;
-                    margin-left: calc(50% - 45%);
-                    box-shadow: 0 25px 180px 0 rgba(0, 0, 0, 0.4), 0 32px 64px -48px rgba(0, 0, 0, 0.7);
-                    border-radius: 20px;
-                    padding: 10px;
-                    overflow: hidden;
-                }
-                .service-invite {
-                    font-size: 14px;
-                }
-                .activities div:nth-child(2),
-                .activities div:nth-child(3),
-                .activities div:nth-child(5) {
-                    height: 50px;
-                }
-                .activities div:nth-child(4) {
-                    height: 40px;
-                }
-                .activities h2 {
-                    color: rgb(30, 30, 30);
-                    font-weight: 300;
-                    letter-spacing: 2.5px;
-                    text-align: center;
-                }
-                .activities div {
-                    width: 100%;
-                    height: 65px;
-                    padding: 5px;
-                    font-size: 15px;
-                    text-align: center;
-                }
-                .map-location {
-                    height: 250px;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
-                }
-                .footer div:nth-child(5) {
-                    height: 40px;
-                }
-                .copy-right {
-                    height: 60px;
-                    padding: 5px;
-                    padding-top: 10px;
-                    font-size: 12px;
-                    overflow: hidden;
-                }
-            }
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.top{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* IMAGE FOR THE .TOP DIV  */
+
+.top{
+    background-image: url('img/cross.jpg');
+    background-size: 140%;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
+
+.navbar{
+    width: 100%;
+    padding: 20px;
+    margin-top: 0px;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    background: transparent;
+    z-index: 2;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.navbar.blury{
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.img_cont{
+    width: 280px;
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    border-radius: 7px;
+}
+
+.img_cont img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.logo_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.links_cont{
+    width: 350px;
+    margin-left: -50px;
+    padding: 5px;
+    display: flex;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+}
+
+.links_cont button:hover{
+    color: rgb(170, 170, 170);
+}
+
+.give_btn{
+    width: 150px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    border-radius: 35px;
+    transition: all 0.2s ease-in-out;
+}
+
+.give_btn:hover{
+    width: 160px;
+}
+
+/* THIS IS THE MOBILE MENU HAMBURGER  */
+.menu_cont{
+    padding: 5px;
+    height: 100%;
+    margin-top: 13px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.menu_cont i {
+    font-size: xx-large;
+}
+
+/* THIS IS THE MOBILE NAV MENU  */
+.slide_nav_cont{
+    width: 80%;
+    height: 370px;
+    margin-top: 40vh;
+    margin-left: 150%;
+    transition: all 0.3s ease;
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    color: white;
+    font-size: 0px;
+}
+
+.slide_nav_cont.active{
+    width: 80%;
+    height: 370px;
+    position: fixed;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: calc(50vh - 200px);
+    margin-left: calc(50% - 40%);
+    z-index: 5;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(40, 40, 40);
+    font-size: 18px;
+    box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24),
+    0 3px 6px rgba(0, 0, 0, 0.15),
+    0 10px 20px rgba(0, 0, 0, 0.10),
+    0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.slide_nav_cont #menu_close_btn{
+    margin-left: calc(100% - 50px);
+    font-family: "Ubuntu", sans-serif;
+    font-size: xx-large;
+    font-weight: 400;
+    color: red;
+}
+
+#landing_text{
+    width: 80%;
+    color: white;
+    margin-top: 230px;
+    margin-left: calc(50% - 40%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-align: center;
+    font-size: 70px;
+}
+
+#landing_text_ref{
+    color: white;
+    text-align: center;
+}
+
+#change-quote-btn{
+    width: 140px;
+    color: white;
+    font-family: "Plus Jakarta Sans" , sans-serif;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 7px;
+    margin-top: 40px;
+    margin-left: calc(50% - 70px);
+}
+
+.sect_heading{
+    text-align: center;
+    color: grey;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.ministry-arms {
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+.ministry-arms .arm {
+    width: 250px;
+    height: 300px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid white;
+    overflow:hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4), 0 5px 2px -10px rgba(0, 0, 0, 0.5);
+}
+
+.ministry-arms .arm::before {
+    content: "";
+    display: block;
+    height: 25%;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(65, 0, 140, 0.8);
+    border-radius: 12px 12px 0 0;
+}
+
+.ministry-arms .arm hr {
+    width: 80%;
+    margin-top: 5px;
+    margin-left: calc(50% - 40%);
+}
+
+.ministry-arms .arm p {
+    padding: 10px;
+}
+
+.ministry-arms .arm .arm-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-top: -55px;
+    margin-left: calc(50% - 60px);
+    display: flex;
+    justify-content: center;
+}
+
+.ministry-arms .arm .arm-image img {
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.activities {
+    width: 60%;
+    height: 470px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: calc(50% - 30%);
+    box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.4), 0 16px 12px -20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.activities h2 {
+    color: rgb(30, 30, 30);
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.activities div {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.service-invite {
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 35px;
+    padding: 4px;
+}
+
+.service-invite a {
+    color: rgb(0, 15, 255);
+}
+
+.useless{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+.my_footer{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background: rgb(26, 26, 60);
+    color: rgb(185, 185, 185);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.my_footer_copyright{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+}
+
+.my_footer_icons{
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.my_footer_icons i:hover{
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+}
+
+.my_footer_mail{
+    height: 40px;
+    padding: 8px;
+}
+
+.my_footer_mail:hover{
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+}
+
+/* STYLING FOR LARGE MOBILE DEVICES */
+@media (max-width: 1100px) {
+    .links_cont,.give_btn{
+        display: none;
+    }
+
+    .menu_cont{
+        display: block;
+    }
+
+    .top{
+        background-size: 200%;
+        background-repeat: no-repeat;   
+    }
+}
+
+/* STYLING FOR LARGE MOBILE DEVICES */
+@media (max-width: 850px) {
+    .top{
+        background-size: 350%;
+        background-position-y: -120px;
+        background-repeat: no-repeat;   
+    }
+    .logo_name{
+        font-size: 14px;
+    }
+    #landing_text{
+        width: 95%;
+        margin-left: calc(50% - 47.5%);
+        margin-top: 230px;
+        font-size: 40px;
+    }
+    .activities{
+        width: 90%;
+        margin-left: calc(50% - 45%);
+    }
+    .my_footer{
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
