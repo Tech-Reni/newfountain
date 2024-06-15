@@ -286,6 +286,7 @@ body{
     margin-top: 12px;
     text-align: center;
     overflow: hidden;
+    font-size: 14px;
 }
 
 .service-invite {
