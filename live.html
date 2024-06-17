@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/c9733f2a12.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./img/cross.jpg">
+   <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./img/logo.jpg" type="image/png">
+
+  <style>
+    .iframe-container {
+        text-align: center; /* Center the container text */
+    }
+    .iframe-container iframe {
+        width: 560px;
+        height: 315px;
+        max-width: 100%; /* Make it responsive */
+        margin-top: 200px;
+        margin-left: calc(50% - 265px);
+    }
+</style>
+
+  <title>The New Fountain of the word Mininstries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- THE FIRST PART OF THE WEB THAT USERS SEE  -->
+  <div class="top">
+
+    <!-- THIS IS THE NAVBAR -->
+    <div class="navbar" id="navbar">
+
+      <div class="img_cont">
+        <img src="./img/logo.jpg" alt="logo">
+        <div class="logo_name">
+          THE NEW FOUNTAIN OF <br> THE WORD MINISTRIES
+        </div>
+      </div>
+
+      <!-- THIS IS FOR THE DESKTOP VIEW ONLY  -->
+      <div class="links_cont">
+        <button><a href="./index.html">Home</a></button>
+        <button><a href="#">About</a></button>
+  
+        <button><a href="live.html">Live</a></button>
+        <button><a href="#">Mission</a></button>
+      </div>
+
+      <!-- THIS IS THE GIVE BUTTON  -->
+      <button class="give_btn">
+        Online give
+      </button>
+
+      <div class="menu_cont" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+     
+    </div>
+
+    <!-- THIS IS THE MOBILE NAVBAR -->
+    <div class="slide_nav_cont" id="slide_nav_cont">
+      <button id="menu_close_btn"><p>X</p></button><br>
+      <button><a href="./index.html">Home</a></button>
+      <br>
+      <button><a href="#">About</a></button>
+      <br>
+      <button><a href="live.html">Live</a></button>
+      <br>
+      <button><a href="#">Mission</a></button>
+      <br>
+      <button><a href="#">Online Give</a></button>
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/live_stream?channel=newfountainglobal" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  
+  <div class="useless"></div>
+ 
+  
+  <!-- THIS IS THE FOOTER  -->
+  <div class="my_footer">
+    <div class="my_footer_copyright">
+      ©2024 TNFWM  All Rights Reserved.
+    </div>
+    <div class="my_footer_mail">
+      newfountainglobal@gmail.com
+    </div>
+    <div class="my_footer_icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.youtube.com/@newfountainglobal"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+<script>
+    window.addEventListener("scroll" , () => {
+    let navbar = document.getElementById("navbar");
+    navbar.classList.toggle("blury" , window.scrollY > 100);
+})
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
